@@ -81,43 +81,46 @@ class _SearchScreenState extends State<SearchScreen> {
       body: FloatingSearchBar(
         controller: controller,
         body: FloatingSearchBarScrollNotifier(
-          child: Container(
-            child: Center(
-              child: FutureBuilder(
-                future: DefaultAssetBundle.of(context)
-                    .loadString('data/hotels.json'),
-                builder: (BuildContext context, AsyncSnapshot snapshot) {
-                  var mydata = jsonDecode(snapshot.data.toString());
-                  return ListView.builder(
-                    itemBuilder: (BuildContext context, int index) {
-                      return Card(
-                        color: Color(0xFF9AFEFF),
-                        child: GestureDetector(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.stretch,
-                            children: [
-                              Text(
-                                'Place:' + mydata[index]['title'],
-                                style: TextStyle(
-                                  fontWeight: FontWeight.w600,
-                                  color: Colors.black,
-                                  fontSize: 15,
+          child: Padding(
+            padding: const EdgeInsets.only(top: 60.0),
+            child: Container(
+              child: Center(
+                child: FutureBuilder(
+                  future: DefaultAssetBundle.of(context)
+                      .loadString('data/hotels.json'),
+                  builder: (BuildContext context, AsyncSnapshot snapshot) {
+                    var mydata = jsonDecode(snapshot.data.toString());
+                    return ListView.builder(
+                      itemBuilder: (BuildContext context, int index) {
+                        return Card(
+                          color: Color(0xFF9AFEFF),
+                          child: GestureDetector(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.stretch,
+                              children: [
+                                Text(
+                                  'Place:' + mydata[index]['title'],
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.black,
+                                    fontSize: 15,
+                                  ),
                                 ),
-                              ),
-                              Text('City:' + mydata[index]['city']),
-                            ],
+                                Text('City:' + mydata[index]['city']),
+                              ],
+                            ),
+                            onTap: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (_) => DetailScreen(),
+                                    fullscreenDialog: true)),
                           ),
-                          onTap: () => Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (_) => DetailScreen(),
-                                  fullscreenDialog: true)),
-                        ),
-                      );
-                    },
-                    itemCount: mydata == null ? 0 : mydata.length,
-                  );
-                },
+                        );
+                      },
+                      itemCount: mydata == null ? 0 : mydata.length,
+                    );
+                  },
+                ),
               ),
             ),
           ),

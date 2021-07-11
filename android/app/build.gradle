@@ -42,7 +42,7 @@ apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId "com.Codex.Tour_Ghana"
         minSdkVersion 16
-        targetSdkVersion 30
+        targetSdkVersion 23
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
     }

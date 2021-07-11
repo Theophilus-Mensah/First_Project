@@ -45,12 +45,12 @@ List<Activity> activities = [
 
 List<Destination> destinations = [
   Destination(
-      imageUrl: 'assets/images/lakevolta3.jpg',
-      name: 'Lake Volta',
+      imageUrl: 'assets/images/molenationalpark00.jpg',
+      name: 'Mole National Park',
       description:
-          'Visit Lake Volta for an amazing and unforgettable adventure.',
+          'Visit Mole national park for an amazing and unforgettable adventure.',
       activities: activities,
-      city: 'Oti'),
+      city: 'Bono'),
   Destination(
       imageUrl: 'assets/images/nzulezo2.jpg',
       name: 'Nzulezo',
