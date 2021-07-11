@@ -9,7 +9,6 @@ class AllRestaurantScreen extends StatefulWidget {
 }
 
 class _AllRestaurantScreenState extends State<AllRestaurantScreen> {
-  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,7 +35,7 @@ class _AllRestaurantScreenState extends State<AllRestaurantScreen> {
           ),
           Expanded(
             child: RestaurantStaggeredGridview(),
-          )
+          ),
         ],
       ),
     );

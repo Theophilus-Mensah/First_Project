@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_travel_ui_starter/models/restaurant_model.dart';
 import 'package:flutter_travel_ui_starter/screens/all_restaurant_screen.dart';
 import 'package:flutter_travel_ui_starter/screens/detail/detail_screen2r.dart';
-// import 'package:flutter_travel_ui_starter/screens/detail/detail_screenR.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class RestaurantPlace extends StatelessWidget {

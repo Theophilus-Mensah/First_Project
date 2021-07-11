@@ -35,7 +35,7 @@ class _AllHotelScreenState extends State<AllHotelScreen> {
           ),
           Expanded(
             child: HotelStaggeredGridview(),
-          )
+          ),
         ],
       ),
     );

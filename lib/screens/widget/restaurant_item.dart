@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_travel_ui_starter/constants.dart';
+import 'package:flutter_travel_ui_starter/models/place.dart';
 import 'package:flutter_travel_ui_starter/screens/detail/detail_screenR.dart';
 
 class AllRestaurantItem extends StatelessWidget {
@@ -9,6 +9,8 @@ class AllRestaurantItem extends StatelessWidget {
     this.index, {
     Key key,
   }) : super(key: key);
+
+  get allrestaurantlist => null;
 
   @override
   Widget build(BuildContext context) {
@@ -25,11 +27,11 @@ class AllRestaurantItem extends StatelessWidget {
       },
       child: Container(
         alignment: Alignment.bottomLeft,
-        height: allrestaurantlist[index].height,
+        height: allrestaurant[index].height,
         decoration: BoxDecoration(
           image: DecorationImage(
               image: AssetImage(
-                allrestaurantlist[index].imageUrl,
+                allrestaurant[index].imageUrl,
               ),
               fit: BoxFit.cover),
           borderRadius: BorderRadius.circular(16),
@@ -41,7 +43,7 @@ class AllRestaurantItem extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: [
               Text(
-                allrestaurantlist[index].title,
+                allrestaurant[index].title,
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 16,
@@ -49,12 +51,12 @@ class AllRestaurantItem extends StatelessWidget {
                 ),
               ),
               Text(
-                allrestaurantlist[index].subtitle,
+                allrestaurant[index].subtitle,
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 14,
                 ),
-              )
+              ),
             ],
           ),
         ),

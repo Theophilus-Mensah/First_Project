@@ -1,15 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_travel_ui_starter/models/place.dart';
 
-// class Places {
-//   String title;
-//   String subtitle;
-//   String imageUrl;
-//   double height;
-
-//   Places(this.title, this.subtitle, this.imageUrl, this.height);
-// }
-
 Color mBackgroundColor = Color(0xFFFEFEFE);
 
 Color mPrimaryColor = Color(0xFFf36f7c);
@@ -96,55 +87,55 @@ List<AllHotel> allhotellist = [
   AllHotel('Glamossay Hotel', 'Bono', 'assets/images/glamossayhotel.jpg', 200),
 ];
 
-List<AllRestaurant> allrestaurantlist = [
-  AllRestaurant('coco lounge', 'Accra', 'assets/images/cocolounge.jpg', 200),
-  AllRestaurant('urban grill', 'Accra', 'assets/images/urbangrill1.jpg', 200),
-  AllRestaurant('la chaumiere', 'Accra', 'assets/images/lachaumiere1.jpg', 200),
-  AllRestaurant(
-      'kokrobite garden', 'Accra', 'assets/images/kokrobitegarden1.jpg', 200),
-  AllRestaurant('the republic bar and grill', 'Accra',
-      'assets/images/therepublicbar1.jpg', 200),
-  AllRestaurant(
-      'oasis beach resort', 'Accra', 'assets/images/oasisbeachresort.jpg', 200),
-  AllRestaurant('new life cafe', 'Accra', 'assets/images/newlifecafe.jpg', 200),
-  AllRestaurant('summeryard vegetarian cafe', 'Accra',
-      'assets/images/summeryard.jpg', 200),
-  AllRestaurant(
-      'coffee corner', 'Accra', 'assets/images/coffeecorner.jpg', 200),
-  AllRestaurant('bombay spice', 'Accra', 'assets/images/bombayspice.jpg', 200),
-  AllRestaurant('cafe puerto', 'Accra', 'assets/images/cafepuerto1.jpg', 200),
-  AllRestaurant(
-      'gilous bar & restaurant', 'Accra', 'assets/images/gilousbar.jpg', 200),
-  AllRestaurant('sportzzz bar', 'Accra', 'assets/images/sportzzzbar.jpg', 200),
-  AllRestaurant('somewhere', 'Accra', 'assets/images/somewhere.jpg', 200),
-  AllRestaurant(
-      'in n out chillies', 'Accra', 'assets/images/innoutchillies1.jpg', 200),
-  AllRestaurant(
-      'maritime club', 'Accra', 'assets/images/maritimeclub.jpg', 200),
-  AllRestaurant(
-      'linda dor restaurant', 'Accra', 'assets/images/lindador1.jpg', 200),
-  AllRestaurant('chris cafe', 'Accra', 'assets/images/cocolounge.jpg', 200),
-  AllRestaurant('bar 205', 'Accra', 'assets/images/bar205.jpg', 200),
-  AllRestaurant('moti mahal', 'Accra', 'assets/images/motimahal.jpg', 200),
-  AllRestaurant('the view bar and grill', 'Accra',
-      'assets/images/theviewbarandgrill.jpg', 200),
-  AllRestaurant('Ike\'s Cafe and Grill Ghana', 'Accra',
-      'assets/images/ikescafeandgrillghana.jpg', 200),
-  AllRestaurant(
-      'Vic Baboo\'s Cafe', 'Accra', 'assets/images/vicbabooscafe.jpg', 200),
-  AllRestaurant('wooden tower', 'Accra', 'assets/images/woodenbakery.jpg', 200),
-  AllRestaurant('anansekrom pub and restaurant', 'Accra',
-      'assets/images/cocolounge.jpg', 200),
-  AllRestaurant('oasis lounge bar and restaurant', 'Accra',
-      'assets/images/oasis.jpg', 200),
-  AllRestaurant('chuck\'s bar & restaurant,', 'Accra',
-      'assets/images/chucksbarrestaurant.jpg', 200),
-  AllRestaurant(
-      'luxury restaurant', 'Accra', 'assets/images/luxuryrestaurant.jpg', 200),
-  AllRestaurant('wooden bakery and coffee shop', 'Accra',
-      'assets/images/woodenbakery.jpg', 200),
-  AllRestaurant(
-      'swap fast food', 'Accra', 'assets/images/swaprestaurant.jpg', 200),
-  AllRestaurant('bellies byte', 'Accra', 'assets/images/belliesbyte.jpg', 200),
-  AllRestaurant('cozy cuisine', 'Accra', 'assets/images/cozycuisine.jpg', 200),
-];
+// List<AllRestaurant> allrestaurantlist = [
+//   AllRestaurant('coco lounge', 'Accra', 'assets/images/cocolounge.jpg', 200),
+//   AllRestaurant('urban grill', 'Accra', 'assets/images/urbangrill1.jpg', 200),
+//   AllRestaurant('la chaumiere', 'Accra', 'assets/images/lachaumiere1.jpg', 200),
+//   AllRestaurant(
+//       'kokrobite garden', 'Accra', 'assets/images/kokrobitegarden1.jpg', 200),
+//   AllRestaurant('the republic bar and grill', 'Accra',
+//       'assets/images/therepublicbar1.jpg', 200),
+//   AllRestaurant(
+//       'oasis beach resort', 'Accra', 'assets/images/oasisbeachresort.jpg', 200),
+//   AllRestaurant('new life cafe', 'Accra', 'assets/images/newlifecafe.jpg', 200),
+//   AllRestaurant('summeryard vegetarian cafe', 'Accra',
+//       'assets/images/summeryard.jpg', 200),
+//   AllRestaurant(
+//       'coffee corner', 'Accra', 'assets/images/coffeecorner.jpg', 200),
+//   AllRestaurant('bombay spice', 'Accra', 'assets/images/bombayspice.jpg', 200),
+//   AllRestaurant('cafe puerto', 'Accra', 'assets/images/cafepuerto1.jpg', 200),
+//   AllRestaurant(
+//       'gilous bar & restaurant', 'Accra', 'assets/images/gilousbar.jpg', 200),
+//   AllRestaurant('sportzzz bar', 'Accra', 'assets/images/sportzzzbar.jpg', 200),
+//   AllRestaurant('somewhere', 'Accra', 'assets/images/somewhere.jpg', 200),
+//   AllRestaurant(
+//       'in n out chillies', 'Accra', 'assets/images/innoutchillies1.jpg', 200),
+//   AllRestaurant(
+//       'maritime club', 'Accra', 'assets/images/maritimeclub.jpg', 200),
+//   AllRestaurant(
+//       'linda dor restaurant', 'Accra', 'assets/images/lindador1.jpg', 200),
+//   AllRestaurant('chris cafe', 'Accra', 'assets/images/cocolounge.jpg', 200),
+//   AllRestaurant('bar 205', 'Accra', 'assets/images/bar205.jpg', 200),
+//   AllRestaurant('moti mahal', 'Accra', 'assets/images/motimahal.jpg', 200),
+//   AllRestaurant('the view bar and grill', 'Accra',
+//       'assets/images/theviewbarandgrill.jpg', 200),
+//   AllRestaurant('Ike\'s Cafe and Grill Ghana', 'Accra',
+//       'assets/images/ikescafeandgrillghana.jpg', 200),
+//   AllRestaurant(
+//       'Vic Baboo\'s Cafe', 'Accra', 'assets/images/vicbabooscafe.jpg', 200),
+//   AllRestaurant('wooden tower', 'Accra', 'assets/images/woodenbakery.jpg', 200),
+//   AllRestaurant('anansekrom pub and restaurant', 'Accra',
+//       'assets/images/cocolounge.jpg', 200),
+//   AllRestaurant('oasis lounge bar and restaurant', 'Accra',
+//       'assets/images/oasis.jpg', 200),
+//   AllRestaurant('chuck\'s bar & restaurant,', 'Accra',
+//       'assets/images/chucksbarrestaurant.jpg', 200),
+//   AllRestaurant(
+//       'luxury restaurant', 'Accra', 'assets/images/luxuryrestaurant.jpg', 200),
+//   AllRestaurant('wooden bakery and coffee shop', 'Accra',
+//       'assets/images/woodenbakery.jpg', 200),
+//   AllRestaurant(
+//       'swap fast food', 'Accra', 'assets/images/swaprestaurant.jpg', 200),
+//   AllRestaurant('bellies byte', 'Accra', 'assets/images/belliesbyte.jpg', 200),
+//   AllRestaurant('cozy cuisine', 'Accra', 'assets/images/cozycuisine.jpg', 200),
+// ];

@@ -56,7 +56,7 @@ class AllHotelItem extends StatelessWidget {
                   color: Colors.white,
                   fontSize: 14,
                 ),
-              )
+              ),
             ],
           ),
         ),

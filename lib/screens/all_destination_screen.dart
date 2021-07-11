@@ -36,7 +36,7 @@ class _AllDestinationScreenState extends State<AllDestinationScreen> {
           ),
           Expanded(
             child: PlaceStaggeredGridview(),
-          )
+          ),
         ],
       ),
     );

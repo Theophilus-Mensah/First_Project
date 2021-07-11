@@ -5,7 +5,6 @@ import 'package:flutter_travel_ui_starter/models/hotel_model.dart';
 // import 'package:flutter_travel_ui_starter/models/place.dart';
 import 'package:flutter_travel_ui_starter/screens/search_screen.dart';
 import 'package:flutter_travel_ui_starter/screens/widget/about.dart';
-import 'package:flutter_travel_ui_starter/screens/widget/place_and_name.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class HotelDetails2 extends StatefulWidget {
@@ -120,7 +119,6 @@ class _HotelDetails2State extends State<HotelDetails2> {
               ),
             ],
           ),
-          PlaceAndName(),
           About(),
         ],
       ),

@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_travel_ui_starter/models/restaurant_model.dart';
-// import 'package:flutter_travel_ui_starter/models/activity_model.dart';
-// import 'package:flutter_travel_ui_starter/models/destination_model.dart';
 import 'package:flutter_travel_ui_starter/screens/search_screen.dart';
-import 'package:flutter_travel_ui_starter/screens/widget/about.dart';
-import 'package:flutter_travel_ui_starter/screens/widget/place_and_name.dart';
+import 'package:flutter_travel_ui_starter/screens/widget/aboutR.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class RestaurantDetails2 extends StatefulWidget {
@@ -120,8 +117,7 @@ class _RestaurantDetails2State extends State<RestaurantDetails2> {
               ),
             ],
           ),
-          PlaceAndName(),
-          About(),
+          AboutR(),
         ],
       ),
     );

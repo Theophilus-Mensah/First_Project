@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_travel_ui_starter/models/destination_model.dart';
 import 'package:flutter_travel_ui_starter/screens/search_screen.dart';
 import 'package:flutter_travel_ui_starter/screens/widget/about.dart';
-import 'package:flutter_travel_ui_starter/screens/widget/place_and_name.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class DestinationScreen extends StatefulWidget {
@@ -118,7 +117,6 @@ class _DestinationScreenState extends State<DestinationScreen> {
               ),
             ],
           ),
-          PlaceAndName(),
           About(),
         ],
       ),
