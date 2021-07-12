@@ -15,11 +15,15 @@ class _GoogleMapsState extends State<GoogleMaps> {
   String _launchCovid = "https://visitghana.com/coronavirus-alert/";
 
   Future<void> _launchedInMaps(String url) async {
-    if (await canLaunch(url)) {
-      await launch(url,
-          forceSafariVC: true,
-          forceWebView: true,
-          headers: <String, String>{'header_key': 'header_value'});
+    if (await canLaunch("https://www.googlemaps.com")) {
+      final bool nativeApplaunchSucceeded = await launch(
+        "https://www.googlemaps.com",
+        forceSafariVC: true,
+        universalLinksOnly: true,
+      );
+      if (!nativeApplaunchSucceeded) {
+        await launch("https://www.googlemaps.com", forceWebView: true);
+      }
     } else {
       throw 'could not launch $url';
     }
